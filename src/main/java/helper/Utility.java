@@ -25,6 +25,8 @@ public class Utility
 	}
 	
 	
+	
+	
 	public static void highLightElement(WebDriver driver, WebElement element) 
 	{
 		((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
