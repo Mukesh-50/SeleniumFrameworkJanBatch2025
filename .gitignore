@@ -1,1 +1,32 @@
-/target/
+# macOS system file
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Maven target directory
+target/
+
+# TestNG output folder
+test-output/
+
+# IntelliJ IDEA project files
+*.iml
+.idea/
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# OS generated files
+Thumbs.db
+Desktop.ini
