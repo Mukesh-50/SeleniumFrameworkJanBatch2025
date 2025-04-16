@@ -23,7 +23,11 @@ public class Utility
 		
 		return ts.getScreenshotAs(OutputType.BASE64);
 	}
-	
+
+	public static void captureScreenshotByMukesh()
+	{
+		
+	}
 	
 	public static void highLightElement(WebDriver driver, WebElement element) 
 	{
