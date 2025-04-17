@@ -1,5 +1,6 @@
 package helper;
 
+import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -23,7 +24,22 @@ public class Utility
 		
 		return ts.getScreenshotAs(OutputType.BASE64);
 	}
+
 	
+	public static File captureScreenshotFile(WebDriver driver)
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		
+		return ts.getScreenshotAs(OutputType.FILE);
+	}
+	
+
+
+	public static void captureScreenshotByMukesh()
+	{
+		
+	}
+
 	
 	public static void highLightElement(WebDriver driver, WebElement element) 
 	{
