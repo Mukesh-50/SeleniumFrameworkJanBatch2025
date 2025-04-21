@@ -19,9 +19,9 @@
         <span class="ms-3 fs-6">default</span>
       </div>
       <div>
-        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 3m 36s</span>
-        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2025-04-09 08:07:52 am</span>
-        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2025-04-09 08:11:28 am</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 19s</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2025-04-18 08:03:58 am</span>
+        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2025-04-18 08:04:18 am</span>
           <button role="button" id="sys-info" class="btn btn-outline-primary smaller" title="View System Info">
             <i class="bi bi-pc-display-horizontal"></i></button>
         <button role="button" id="shortcuts" class="btn btn-outline-primary smaller" title="Shortcuts">
@@ -46,8 +46,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp1">0</span> Passed,
-                <span id="sf1">1</span> Failed,
+                <span id="sp1">1</span> Passed,
+                <span id="sf1">0</span> Failed,
                 <span id="ss1">0</span> Skipped
               </div>
             </div>
@@ -63,8 +63,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp2">0</span> Passed,
-                <span id="sf2">1</span> Failed,
+                <span id="sp2">1</span> Passed,
+                <span id="sf2">0</span> Failed,
                 <span id="ss2">0</span> Skipped
               </div>
             </div>
@@ -80,9 +80,9 @@
                   </div>
                 </div>
                 <div class="card-footer small">
-                  <span id="sp3">3</span> Passed,
-                  <span id="sf3">1</span> Failed,
-                  <span id="ss3">5</span> Skipped
+                  <span id="sp3">4</span> Passed,
+                  <span id="sf3">0</span> Failed,
+                  <span id="ss3">0</span> Skipped
                 </div>
               </div>
             </div>
@@ -108,30 +108,30 @@
         </div>
       </div>
     </div>
-      <div class="test-container failed">
+      <div class="test-container passed">
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <h6 class="mb-3 testname fs-6 failed">Suite</h6>
+              <h6 class="mb-3 testname fs-6 passed">Suite</h6>
               <div class="small">
-                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 3m 35s</span>
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 19s</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2025-04-09 08:07:52 am</span>
+                  2025-04-18 08:03:58 am</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2025-04-09 08:11:27 am</span>
+                  2025-04-18 08:04:18 am</span>
               </div>
               
             </div>
             <div class="col-8">
-                <div class="card mb-3 result failed">
+                <div class="card mb-3 result passed">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <div>
-                          <i class="bi bi-exclamation-octagon-fill text-danger"></i>
-                        <span class="fs-6 ms-2">testcases.LoginApplication</span>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">testcases.LoginApplicationTest</span>
                       </div>
                       <div>
-                        <span class="badge text-dark bg-light">3m 30s</span>
+                        <span class="badge text-dark bg-light">14s</span>
                       </div>
                     </div>
                     
@@ -143,7 +143,7 @@
           <span class="fs-6 ms-2">loginWithValidCredentials <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
         </div>
         <div>
-          <span class="badge text-dark bg-light">10s</span>
+          <span class="badge text-dark bg-light">7s</span>
         </div>
       </div>
       <p class="desc">[admin@email.com, admin@123]</p>
@@ -179,7 +179,7 @@ LOG:INFO - User is able to logout
           <span class="fs-6 ms-2">verifyFooterLinks <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
         </div>
         <div>
-          <span class="badge text-dark bg-light">23ms</span>
+          <span class="badge text-dark bg-light">6ms</span>
         </div>
       </div>
       <p class="desc"></p>
@@ -190,326 +190,22 @@ LOG:PASS - Footer links verified
           </pre>
         </div>
     </div>
-    <div class="leaf skipped pb-1 ">
+    <div class="leaf passed pb-1 logs-toggle">
       <div class="d-flex justify-content-between mt-3">
         <div>
-            <i class="bi bi-exclamation-octagon-fill text-info"></i>
-          <span class="fs-6 ms-2">verifyNewUserLinks </span>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">verifyNewUserLinks <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
         </div>
         <div>
-          <span class="badge text-dark bg-light">31s</span>
+          <span class="badge text-dark bg-light">1s</span>
         </div>
       </div>
       <p class="desc"></p>
-        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: New user? Signup111 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49814/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4fd40a631399bc161a4c474b4ec903f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at helper.Utility.checkElement(Utility.java:59)
-	at pages.LoginPage.isSignUpLinkPresent(LoginPage.java:34)
-	at testcases.LoginApplication.verifyNewUserLinks(LoginApplication.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre>
-        <div class="mt-3 logs ">
+        <div class="mt-3 logs d-none">
           <pre class="pb-0">
 LOG:PASS - Test Passed
+LOG:PASS - Signup Link is present
           </pre>
-        </div>
-    </div>
-    <div class="leaf skipped pb-1 ">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-exclamation-octagon-fill text-info"></i>
-          <span class="fs-6 ms-2">verifyNewUserLinks </span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">31s</span>
-        </div>
-      </div>
-      <p class="desc"></p>
-        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: New user? Signup111 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49814/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4fd40a631399bc161a4c474b4ec903f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at helper.Utility.checkElement(Utility.java:59)
-	at pages.LoginPage.isSignUpLinkPresent(LoginPage.java:34)
-	at testcases.LoginApplication.verifyNewUserLinks(LoginApplication.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre>
-    </div>
-    <div class="leaf skipped pb-1 ">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-exclamation-octagon-fill text-info"></i>
-          <span class="fs-6 ms-2">verifyNewUserLinks </span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">31s</span>
-        </div>
-      </div>
-      <p class="desc"></p>
-        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: New user? Signup111 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49814/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4fd40a631399bc161a4c474b4ec903f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at helper.Utility.checkElement(Utility.java:59)
-	at pages.LoginPage.isSignUpLinkPresent(LoginPage.java:34)
-	at testcases.LoginApplication.verifyNewUserLinks(LoginApplication.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre>
-    </div>
-    <div class="leaf skipped pb-1 ">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-exclamation-octagon-fill text-info"></i>
-          <span class="fs-6 ms-2">verifyNewUserLinks </span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">31s</span>
-        </div>
-      </div>
-      <p class="desc"></p>
-        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: New user? Signup111 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49814/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4fd40a631399bc161a4c474b4ec903f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at helper.Utility.checkElement(Utility.java:59)
-	at pages.LoginPage.isSignUpLinkPresent(LoginPage.java:34)
-	at testcases.LoginApplication.verifyNewUserLinks(LoginApplication.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre>
-    </div>
-    <div class="leaf skipped pb-1 ">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-exclamation-octagon-fill text-info"></i>
-          <span class="fs-6 ms-2">verifyNewUserLinks </span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">31s</span>
-        </div>
-      </div>
-      <p class="desc"></p>
-        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: New user? Signup111 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49814/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4fd40a631399bc161a4c474b4ec903f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at helper.Utility.checkElement(Utility.java:59)
-	at pages.LoginPage.isSignUpLinkPresent(LoginPage.java:34)
-	at testcases.LoginApplication.verifyNewUserLinks(LoginApplication.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre>
-    </div>
-    <div class="leaf failed pb-1 ">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
-          <span class="fs-6 ms-2">verifyNewUserLinks </span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">31s</span>
-        </div>
-      </div>
-      <p class="desc"></p>
-        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: New user? Signup111 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49814/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4fd40a631399bc161a4c474b4ec903f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at helper.Utility.checkElement(Utility.java:59)
-	at pages.LoginPage.isSignUpLinkPresent(LoginPage.java:34)
-	at testcases.LoginApplication.verifyNewUserLinks(LoginApplication.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre>
-        <div class="row mt-3">
-            <div class="embed col-2 mb-1">
-              <img src="resources/898ed1d4-9e89-4740-9030-6cfd2d1796d9.png" />
-            </div>
         </div>
     </div>
   </div>
@@ -524,23 +220,23 @@ Session ID: c4fd40a631399bc161a4c474b4ec903f
   </div>
 
   <script>
-    const stats1Annotation = {'total': 1, 'passed': 0};
+    const stats1Annotation = {'total': 1, 'passed': 1};
     const stats1 = [
-      { result: 'Passed', count: 0, bg: 'rgb(140, 197, 83)' },
-      { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
+      { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
+      { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
       { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
     ];
-      const stats2Annotation = {'total': 1, 'passed': 0};
+      const stats2Annotation = {'total': 1, 'passed': 1};
       const stats2 = [
-        { result: 'Passed', count: 0, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
       ];
-      const stats3Annotation = {'total': 9, 'passed': 3};
+      const stats3Annotation = {'total': 4, 'passed': 4};
       const stats3 = [
-        { result: 'Passed', count: 3, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
-        { result: 'Skipped', count: 5, bg: 'rgb(13, 202, 240)' }
+        { result: 'Passed', count: 4, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
       ];
      
   </script>
@@ -620,12 +316,12 @@ Session ID: c4fd40a631399bc161a4c474b4ec903f
                   <td>Toggle skipped tests</td>
                 </tr>
                 <tr>
-                  <td>esc</td>
-                  <td>Reset all filters</td>
-                </tr>
-                <tr>
                   <td>L</td>
                   <td>Toggle theme (light/dark)</td>
+                </tr>
+                <tr>
+                  <td>esc</td>
+                  <td>Reset all filters</td>
                 </tr>
                 <tr>
                   <td>f</td>

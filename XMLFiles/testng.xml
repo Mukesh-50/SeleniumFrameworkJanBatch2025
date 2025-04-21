@@ -17,9 +17,10 @@
   
     <classes>
     
-      <class name="testcases.LoginApplication"/>
+      <class name="testcases.LoginApplicationTest"/>
       
     </classes>
+    
   </test> 
   
   

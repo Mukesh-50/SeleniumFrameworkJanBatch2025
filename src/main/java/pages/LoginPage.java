@@ -25,7 +25,7 @@ public class LoginPage
 	
 	By footerIcon=By.xpath("//div[contains(@class,'footer')]//a");
 	
-	By signUpLink=By.linkText("New user? Signup111");
+	By signUpLink=By.linkText("New user? Signup");
 	
 	
 	public boolean isSignUpLinkPresent()

@@ -10,7 +10,7 @@ import pages.LoginPage;
 
 
 
-public class LoginApplication extends BaseClass
+public class LoginApplicationTest extends BaseClass
 {
 	LoginPage login;
 	
