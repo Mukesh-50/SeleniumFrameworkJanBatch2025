@@ -1,7 +1,7 @@
 
-# Project Title
+# Selenium Test 
 
-A brief description of what this project does and who it's for
+This Project will execute selenium test on different browser
 
 
 ## Running Tests
@@ -20,5 +20,5 @@ first move to project root directory
 Then Execute below command
 
 ```bash
-  mvn clean test
+  mvn clean test -Dtestsuitefile=testng.xml
 ```
