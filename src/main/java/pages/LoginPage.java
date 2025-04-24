@@ -36,6 +36,16 @@ public class LoginPage
 		return status;
 		
 	}
+
+	public RegistrationPage clickOnSingUpLink()
+	{
+		
+		Utility.checkElement(driver, signUpLink).click();
+		
+		RegistrationPage registrationPage = new RegistrationPage(driver);
+		return registrationPage;
+		
+	}
 	
 	public int countFooterLinks()
 	{

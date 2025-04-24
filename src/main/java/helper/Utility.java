@@ -81,6 +81,20 @@ public class Utility
 	
 		return ele;
 	}
+	public static WebElement checkElementVisibility(WebDriver driver,By locator)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		
+		WebElement ele= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		
+		if(ConfigUtility.readProperty("highlight").equalsIgnoreCase("Yes"))
+		{
+			Utility.highLightElement(driver, ele);
+		}
+	
+		return ele;
+	}
+	
 	
 	
 	
