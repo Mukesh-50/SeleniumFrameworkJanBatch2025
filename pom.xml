@@ -25,6 +25,9 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLFiles/${testsuitefile}</suiteXmlFile>
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+					<url>${url}</url>
+					</systemPropertyVariables>
 
 				</configuration>
 
