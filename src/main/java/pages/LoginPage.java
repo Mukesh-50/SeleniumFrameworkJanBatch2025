@@ -27,11 +27,21 @@ public class LoginPage
 	
 	By signUpLink=By.linkText("New user? Signup");
 	
+	By successMsg = By.xpath("//div[text()='Signup successfully, Please login!']");
+	
 	
 	public boolean isSignUpLinkPresent()
 	{
 		
 		boolean status=Utility.checkElement(driver, signUpLink).isDisplayed();
+		
+		return status;
+		
+	}
+	public boolean checkSuccessMsgPresent()
+	{
+		
+		boolean status=Utility.checkElement(driver, successMsg).isDisplayed();
 		
 		return status;
 		
