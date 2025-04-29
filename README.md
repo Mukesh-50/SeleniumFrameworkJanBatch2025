@@ -17,7 +17,7 @@ first move to project root directory
 ```bash
  cd SeleniumFrameworkJanBatch2025
 ```
-Then Execute below command
+Then Execute below command :
 
 ```bash
   mvn clean test -Dtestsuitefile=testng.xml
