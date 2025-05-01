@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import helper.Utility;
 
@@ -27,10 +28,17 @@ public class LoginPage
 	
 	By signUpLink=By.linkText("New user? Signup");
 	
+	By msg=By.xpath("//div[text()='Signup successfully, Please login!']");
+	
+	public boolean successMsg() {	
+		boolean msgStatus=Utility.checkElement(driver, msg).isDisplayed();
+		return msgStatus;
+	}
+	
 	
 	public boolean isSignUpLinkPresent()
 	{
-		
+	
 		boolean status=Utility.checkElement(driver, signUpLink).isDisplayed();
 		
 		return status;
@@ -78,6 +86,13 @@ public class LoginPage
 	}
 	
 */	
-	
+
+	public signUpPage clickSignUpLink()
+	{		
+		Utility.checkElement(driver, signUpLink).click();
+		signUpPage signUp=new signUpPage(driver);
+		
+		return signUp;		
+	}
 	
 }

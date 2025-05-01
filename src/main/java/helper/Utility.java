@@ -107,6 +107,16 @@ public class Utility
 		js.executeScript("arguments[0].click()", driver.findElement(locator));
 
 	}
+	
+	//only to check presence of an element using JS.
+	public static void checkPresenceUsingJS(WebDriver driver, By locator) 
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].scrollIntoView(true)", driver.findElement(locator));
+        
+		waitForSeconds(2);
+	}
 
 	public static void selectValueFromDropdown(WebElement element, String valueToSelect) {
 
@@ -116,6 +126,15 @@ public class Utility
 
 		System.out.println("*********** Selected " + valueToSelect + " From Dropdown");
 
+	}
+	
+	public static void selectValueFromDropdown(WebDriver driver, By element, String valueToSelect) {
+
+		Select dropdown = new Select(driver.findElement(element));
+
+		dropdown.selectByVisibleText(valueToSelect);
+
+		System.out.println("*********** Selected " + valueToSelect + " From Dropdown");
 	}
 
 	public static void closeBrowser(WebDriver driver) {
@@ -139,7 +158,30 @@ public class Utility
 		}
 	}
 
+	public static WebElement checkElementPresent(WebDriver driver,By locator)
+	  {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement ele=null;
+		
+		try 
+		  {	
+			ele= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			
+			if(ConfigUtility.readProperty("highlight").equalsIgnoreCase("Yes"))
+			  {
+				Utility.highLightElement(driver, ele);
+			  }				
 
+		  } catch (Exception e) {
+
+			System.out.println("WebElement Presence check is Failed using Selenium methods- Trying With JS view.");
+
+			checkPresenceUsingJS(driver, locator);
+
+		     }
+		 
+		return ele;
+	}
 	
 
 	
