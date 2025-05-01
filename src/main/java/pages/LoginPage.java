@@ -30,7 +30,7 @@ public class LoginPage
 	
 	public boolean isSignUpLinkPresent()
 	{
-		
+	
 		boolean status=Utility.checkElement(driver, signUpLink).isDisplayed();
 		
 		return status;
@@ -78,6 +78,13 @@ public class LoginPage
 	}
 	
 */	
-	
+
+	public signUpPage clickSignUpLink()
+	{		
+		Utility.checkElement(driver, signUpLink).click();
+		signUpPage signUp=new signUpPage(driver);
+		
+		return signUp;		
+	}
 	
 }
