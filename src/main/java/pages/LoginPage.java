@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import helper.Utility;
 
@@ -26,6 +27,13 @@ public class LoginPage
 	By footerIcon=By.xpath("//div[contains(@class,'footer')]//a");
 	
 	By signUpLink=By.linkText("New user? Signup");
+	
+	By msg=By.xpath("//div[text()='Signup successfully, Please login!']");
+	
+	public boolean successMsg() {	
+		boolean msgStatus=Utility.checkElement(driver, msg).isDisplayed();
+		return msgStatus;
+	}
 	
 	
 	public boolean isSignUpLinkPresent()
