@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.LoginApplication">
+      <class name="testcases.RegisterNewUser_Raj_Class73">
         <methods>
           <include name="tearDown"/>
+          <include name="createUser" invocation-numbers="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"/>
           <include name="setup"/>
-          <include name="verifyNewUserLinks"/>
         </methods>
-      </class> <!-- testcases.LoginApplication -->
+      </class> <!-- testcases.RegisterNewUser_Raj_Class73 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

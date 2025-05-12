@@ -24,5 +24,22 @@ public class DataProviders
 	}
 	
 	
+	
+	@DataProvider(name="newUserDetails")
+	public static Object[][] getUserData()
+	{
+		//System.out.println("LOG:INFO - DataProvider Getting Ready For Test Data");
+		
+		ChainTestListener.log("LOG:INFO - DataProvider Getting Ready For Test Data");
+		
+		Object [][]arr=ExcelUtility.getData("signUpDetails");
+		
+		ChainTestListener.log("LOG:INFO - DataProvider Ready With Test Data");
+		
+		//System.out.println("LOG:INFO - DataProvider Ready With Test Data");
+		
+		return arr;
+	}
+	
 
 }
