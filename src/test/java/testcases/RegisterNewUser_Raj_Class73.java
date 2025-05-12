@@ -4,29 +4,28 @@ import org.testng.annotations.Test;
 import pages.*;
 import base.BaseClass;
 import dataprovider.DataProviders;
+import helper.Utility;
 
 public class RegisterNewUser_Raj_Class73 extends BaseClass {
 	LoginPage login;
-	signUpPage signUpObj;
+	//signUpPage signUpObj;
 	
-	@Test(priority=0)
-	public void verifySignUpButtonDisabled() {
+	//before you run this Test Method go to data provider class mentioned and look for the data provider name given.
+	@Test(dataProvider="newUserDetails", dataProviderClass=DataProviders.class)
+	public void createUser(String username, String emailID, String password, String interest, String gender, String state, String hobby) {
+		
 		login=new LoginPage(driver);
 		signUpPage signUp=login.clickSignUpLink();
 		boolean signUpStatus=signUp.isSignUpStatus();
 		
 		//verify status of signUp button.
 		 Assert.assertEquals(signUpStatus, false);
-	}
-	
-	//before you run this tc go to data provider class mentioned and look for the data provider name given.
-	@Test(priority=1,dataProvider="newUserDetails", dataProviderClass=DataProviders.class)
-	public void createUser(String username, String emailID, String password, String interest, String gender, String state, String hobby) {
 		
-		signUpObj=new signUpPage(driver);
-		boolean signUpStatusPostUserDetail=signUpObj.newUser(username, emailID, password, interest, gender, state, hobby);
+		//signUpObj=new signUpPage(driver);
+		boolean signUpStatusPostUserDetail=signUp.newUser(username, emailID, password, interest, gender, state, hobby);
 		Assert.assertEquals(signUpStatusPostUserDetail, true);
-		Assert.assertEquals(login.successMsg(), true);		
+		Assert.assertEquals(login.successMsg(), true);
+		Utility.waitForSeconds(5);
 		
 	}
 }
